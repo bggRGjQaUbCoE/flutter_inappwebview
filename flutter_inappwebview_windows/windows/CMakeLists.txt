@@ -13,6 +13,7 @@ message(VERBOSE "CMake system version is ${CMAKE_SYSTEM_VERSION} (using SDK ${CM
 # Project-level configuration.
 set(PROJECT_NAME "flutter_inappwebview_windows")
 project(${PROJECT_NAME} LANGUAGES CXX)
+add_definitions(-D_SILENCE_EXPERIMENTAL_COROUTINE_DEPRECATION_WARNINGS)
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.
